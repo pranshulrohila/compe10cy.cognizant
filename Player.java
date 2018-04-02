@@ -38,9 +38,9 @@ public class Player implements Comparable<Player>{
          try{
          d = sdfp.format(dateOfBirth);
          }catch(Exception e){System.out.println(e);}
-         return  String.format("%-15s%-15s%-10s%-15s%-10s%-10s%-15s%-10s\n", name,d,skill,numberOfMatches,runs,wickets,nationality,powerRating);
+         return  String.format("%-15s %-15s %-15s %-15s %-10s %-10s %-15s %s", name,d,skill,numberOfMatches,runs,wickets,nationality,powerRating);
     }
-	@Override
+    @Override
 	public int compareTo(Player p){
 	     if(this.getNumberOfMatches()==p.getNumberOfMatches())
 		 return 0;
